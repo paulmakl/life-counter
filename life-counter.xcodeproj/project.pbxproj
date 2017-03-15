@@ -13,6 +13,7 @@
 		C01DEB5A1E78C39400F735CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01DEB591E78C39400F735CC /* Assets.xcassets */; };
 		C01DEB5D1E78C39400F735CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01DEB5B1E78C39400F735CC /* LaunchScreen.storyboard */; };
 		C01DEB681E78C39400F735CC /* life_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DEB671E78C39400F735CC /* life_counterTests.swift */; };
+		C01DEB731E78C7E100F735CC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DEB721E78C7E100F735CC /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C01DEB631E78C39400F735CC /* life-counterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "life-counterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01DEB671E78C39400F735CC /* life_counterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_counterTests.swift; sourceTree = "<group>"; };
 		C01DEB691E78C39400F735CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01DEB721E78C7E100F735CC /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C01DEB591E78C39400F735CC /* Assets.xcassets */,
 				C01DEB5B1E78C39400F735CC /* LaunchScreen.storyboard */,
 				C01DEB5E1E78C39400F735CC /* Info.plist */,
+				C01DEB721E78C7E100F735CC /* GameModel.swift */,
 			);
 			path = "life-counter";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				C01DEB551E78C39400F735CC /* ViewController.swift in Sources */,
 				C01DEB531E78C39400F735CC /* AppDelegate.swift in Sources */,
+				C01DEB731E78C7E100F735CC /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
