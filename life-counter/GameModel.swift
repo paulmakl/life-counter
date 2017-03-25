@@ -14,6 +14,15 @@ enum LifeCounterErrors: Error {
     case invalidNumberOfPlayers
 }
 
+/* 
+ It might be right to change Player to a struct like 
+ struct Player {
+    var life: Int
+    var name: String
+ }
+ and move all the smarts to the Game
+*/
+
 class Player {
     var lifeTotal: Int! = nil
     var name: String! = nil
@@ -29,15 +38,16 @@ class Player {
 }
 
 class Game {
-    var players: Array = [Player]()
-    var startingLifeTotal: Int = 20
-    var numberOfPlayers: Int {
+    var players: [Player] = []
+    var startingLifeTotal = 20
+    let defaultName = "Player"
+    var numberOfPlayers: Int{
         get {
             return players.count
         }
     }
     init(newNumberOfPlayers: Int) {
-        
+        try! setNumberOfPlayers(newNumberOfPlayers: newNumberOfPlayers)
     }
     func resetGame() {
         for player in players {
@@ -45,6 +55,16 @@ class Game {
         }
     }
     func setNumberOfPlayers(newNumberOfPlayers: Int) throws {
-        throw LifeCounterErrors.invalidNumberOfPlayers
+        if newNumberOfPlayers > 4 || newNumberOfPlayers < 0 {
+            throw LifeCounterErrors.invalidNumberOfPlayers
+        }
+        
+        for player in players{
+            var person = player
+            var count = 0
+            person = Player(name: defaultName + "\(count)",
+                            lifeTotal: startingLifeTotal)
+            count += 1
+        }
     }
 }

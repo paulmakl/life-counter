@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    private var gameLogic = Game(newNumberOfPlayers: 2)
+    
+    @IBOutlet weak var LifeTotal: UILabel!
+    
+    @IBOutlet weak var PlayerName: UILabel!
+
+    @IBAction func AddLife(_ sender: UIButton) {
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func SubtractLife(_ sender: UIButton) {
     }
-
-
+    
+    @IBAction func Reset(_ sender: UIButton) {
+        gameLogic.resetGame()
+    }
 }
 

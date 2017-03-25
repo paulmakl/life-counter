@@ -58,6 +58,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1E0C4221E86E11900FCC440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01DEB521E78C39400F735CC /* AppDelegate.swift */,
+				C01DEB591E78C39400F735CC /* Assets.xcassets */,
+				C01DEB5B1E78C39400F735CC /* LaunchScreen.storyboard */,
+				C01DEB5E1E78C39400F735CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C01DEB461E78C39400F735CC = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +90,9 @@
 		C01DEB511E78C39400F735CC /* life-counter */ = {
 			isa = PBXGroup;
 			children = (
-				C01DEB521E78C39400F735CC /* AppDelegate.swift */,
+				A1E0C4221E86E11900FCC440 /* Supporting Files */,
 				C01DEB541E78C39400F735CC /* ViewController.swift */,
 				C01DEB561E78C39400F735CC /* Main.storyboard */,
-				C01DEB591E78C39400F735CC /* Assets.xcassets */,
-				C01DEB5B1E78C39400F735CC /* LaunchScreen.storyboard */,
-				C01DEB5E1E78C39400F735CC /* Info.plist */,
 				C01DEB721E78C7E100F735CC /* GameModel.swift */,
 			);
 			path = "life-counter";
@@ -410,6 +418,7 @@
 				C01DEB6E1E78C39400F735CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01DEB6F1E78C39400F735CC /* Build configuration list for PBXNativeTarget "life-counterTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +427,7 @@
 				C01DEB711E78C39400F735CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
