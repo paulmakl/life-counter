@@ -14,14 +14,6 @@ enum LifeCounterErrors: Error {
     case invalidNumberOfPlayers
 }
 
-/* 
- It might be right to change Player to a struct like 
- struct Player {
-    var life: Int
-    var name: String
- }
- and move all the smarts to the Game
-*/
 
 class Player {
     var lifeTotal: Int! = nil
